@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hadley family · parent–child tree</title><link rel="icon" href="../assets/hub-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="app.js" defer></script></head>
+<body>
+<nav class="site-navigation" aria-label="Site navigation"><a href="../index.html">← Home</a><span>Family Tree</span><a href="../SchoolGames/index.html">School Games →</a></nav>
+<header><div class="identity"><span class="seal" aria-hidden="true">H</span><div><p class="eyebrow">THE FAMILY ARCHIVE</p><h1>Connected through generations</h1></div></div><div class="header-note">Hadley &amp; related families<span>Parent → child</span></div></header>
+<main>
+<section class="tree-section" aria-label="Family relationship explorer">
+<div class="toolbar"><label>Explore<select id="scope"><option value="paternal">Paternal Hadley line</option><option value="family">Selected person’s family</option><option value="all">All parent–child relationships</option></select></label><label class="search">Find a person<input id="search" type="search" placeholder="Search names…" autocomplete="off" aria-controls="results"></label><label class="check"><input id="excluded" type="checkbox">Show excluded leads</label></div>
+<div id="results" hidden></div>
+<div class="map-heading"><div><h2 id="view-title">The paternal Hadley line</h2><p id="counts" aria-live="polite"></p></div><div class="zoom"><button id="minus" aria-label="Zoom out">−</button><button id="plus" aria-label="Zoom in">+</button><button id="fit">Fit tree</button></div></div>
+<div id="map" tabindex="0" aria-label="Family graph. Drag to pan, scroll to zoom. Select a person or relationship for details."><svg id="graph" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Parent to child relationships"></svg><div id="empty" hidden>No relationships in this view.</div></div>
+<div class="legend"><span><i class="reported"></i>Reported</span><span><i class="provisional"></i>Provisional</span><span><i class="conflict"></i>Conflict / excluded</span><span><i class="adoptive"></i>Adoption</span><span><i class="separate"></i>Separate family</span></div><p class="map-help">Older generations appear above their children. Select an arrow to see its evidence. Drag to pan · scroll to zoom.</p>
+</section>
+<aside id="details" aria-label="Person and relationship details" aria-live="polite"></aside>
+</main>
+<footer>From the family vault · Headstone dates retain priority over conflicting sources. <span id="total"></span></footer>
+</body></html>

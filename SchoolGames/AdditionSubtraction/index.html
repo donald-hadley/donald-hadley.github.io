@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice addition and subtraction with an adjustable number range.">
+  <meta name="theme-color" content="#f7f6f0">
+  <title>Addition &amp; subtraction | School Games</title>
+  <link rel="icon" href="../../assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/site.css">
+  <script src="game.js" defer></script>
+</head>
+<body class="theme-math">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><img src="../../assets/mark.svg" width="38" height="38" alt="">School Games</a>
+    <a class="back-link" href="../index.html"><span aria-hidden="true">←</span> All games</a>
+  </header>
+  <main class="game-main" id="main">
+    <header class="game-heading"><p class="eyebrow">Number practice</p><h1>Addition &amp; subtraction</h1><p class="subtitle">Build confidence, one calculation at a time.</p></header>
+    <section class="panel setup-panel" id="setup" aria-labelledby="setup-title">
+      <div class="setup-symbol" aria-hidden="true">+ −</div>
+      <h2 id="setup-title">Make it your level</h2>
+      <p class="hint">Choose a number range to get started.</p>
+      <label for="maximum">Maximum value of each term</label>
+      <input id="maximum" type="number" min="1" max="4503599627370495" step="1" value="10" inputmode="numeric" aria-describedby="range-hint setup-error">
+      <p class="hint" id="range-hint">Each number is between 0 and your maximum.<br>Subtraction answers are always 0 or greater.</p>
+      <button class="primary" id="start" type="button">Start quiz <span aria-hidden="true">→</span></button>
+      <p id="setup-error" class="wrong" role="alert"></p>
+    </section>
+    <section class="panel quiz-panel" id="quiz" aria-labelledby="quiz-title" hidden>
+      <h2 class="question-label" id="quiz-title">What is the answer?</h2>
+      <div id="message" role="status" aria-live="polite" aria-atomic="true" hidden>
+        <span class="celebration-stars" aria-hidden="true">★ <span>✓</span> ★</span>
+        <span id="message-text"></span>
+        <span class="celebration-note">Next question in 3 seconds…</span>
+        <span class="celebration-progress" aria-hidden="true"></span>
+      </div>
+      <div class="problem" id="problem" aria-live="polite" aria-atomic="true"></div>
+      <div class="answer-field"><label for="answer">Your answer</label><div class="answer-row">
+        <input id="answer" type="number" step="1" inputmode="numeric" autocomplete="off">
+        <button id="check" type="button">Check answer</button>
+      </div></div>
+      <div class="stats" id="stats" aria-label="Quiz statistics" aria-live="polite">
+        <span>Correct <span id="correct-count">0</span></span>
+        <span>Wrong <span id="wrong-count">0</span></span>
+      </div>
+      <div class="quiz-actions"><button id="reset" class="secondary" type="button">Reset stats</button><button id="settings" class="secondary" type="button">Change maximum</button></div>
+    </section>
+  </main>
+  <noscript><p class="notice">Please enable JavaScript in your browser to play this game.</p></noscript>
+  <footer class="site-footer"><p>School Games</p><p>A little practice goes a long way.</p></footer>
+</body>
+</html>
